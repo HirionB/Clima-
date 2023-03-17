@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clima</title>
+        <link rel="icon" type="image/png" sizes="192x192" href="/FrontEnd/Img/Favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/FrontEnd/Img/Favicon/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/FrontEnd/Img/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/FrontEnd/Img/Favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/FrontEnd/Img/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="ico" href="/FrontEnd/Img/Favicon/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/FrontEnd/Src/Css/Style.css">
+        <script src="/FrontEnd/Src/Js/Script.js"defer></script>
+        <script src="./BackEnd/Src/Js/Climate.js"defer></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="form">
+
+                <h3>Condição do Clima</h3>
+
+                <div class="form-input-container">
+
+                    <input type="text" placeholder="Informe qual a Cidade? " id = "city-input">
+
+                    <button id="search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="weather-data" class="hide">
+
+                <h2>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span id="city"></span>
+
+                </h2>
+
+                <p id="temperatura"><span></span>&deg;C</p>
+
+                <div id="description-container">
+
+                    <p id="description"></p>
+
+                    <img src="" alt="Condições do Tempo" id="weather-icon"></img>
+
+                </div>
+
+                <div id="details-container">
+
+                    <p id="humidity">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <span></span>
+
+                    </p>
+
+                    <p id="wind">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <span></span>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
